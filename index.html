@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Artist App
+    </title>
+    <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="artistSearch">
+        <h1>Artist Directory</h1>
+        <input id="searchArtist" placeholder="Type to search..." type="text" />
+        <button class="btn">Add Artist</button>
+    </div>
+    <form class="addArtistForm" action="index.html" method="POST">
+          <input type="text" maxLength="40" placeholder="Artist Name" name="name" required>
+          <input type="text" maxLength="40" placeholder="About Artist" name="desc" required>
+          <input type="text" placeholder="Image url" name="url" required>
+          <button type="button" class="btn">Add</button>
+    </form>
+    <div id="artistList">
+         <div class="artist">
+            <img src="https://randomuser.me/api/portraits/med/men/1.jpg" class="artistImage"/>
+            <div class="artistInfo">
+                <p class="artistName">Barot Bellingham</p>
+                <p class="artistDesc">Royal Academy of Painting and Sculpture</p>
+            </div>
+            <button type="button" class="deleteBtn">Delete</button>
+        </div>
+        <!--
+        <div class="artist">
+            <img src="https://randomuser.me/api/portraits/med/women/8.jpg" class="artistImage"/>
+            <div class="artistInfo">
+                <p class="artistName">Hillary Hewitt Goldwyn-Post</p>
+                <p class="artistDesc">New York University</p>
+            </div>
+        </div>
+        <div class="artist">
+            <img src="https://randomuser.me/api/portraits/med/men/2.jpg" class="artistImage"/>
+            <div class="artistInfo">
+                <p class="artistName">Jonathan G. Ferrar II</p>
+                <p class="artistDesc">Artist to Watch in 2012</p>
+            </div>
+        </div>
+        <div class="artist">
+            <img src="https://randomuser.me/api/portraits/med/women/2.jpg" class="artistImage"/>
+            <div class="artistInfo">
+                <p class="artistName">Jennifer Jermome</p>
+                <p class="artistDesc">Emily Carr</p>
+            </div>
+        </div>
+        <div class="artist">
+            <img src="https://randomuser.me/api/portraits/med/women/3.jpg" class="artistImage"/>
+            <div class="artistInfo">
+                <p class="artistName">Katy Belle</p>
+                <p class="artistDesc">Carlton Univerity of Art and Design</p>
+            </div>
+        </div> -->
+    </div>
+
+
+</body>
+</html>
